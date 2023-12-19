@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<div class="container-fluid d-flex justify-content-center align-items-center">
+    <form action="/add" method="post" class="formAdd">
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="title"  placeholder="Title of the book" name="title">
+            <label for="title">Title of the book</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="author"  placeholder="Author of the book" name="author">
+            <label for="author">Author of the book</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="date" class="form-control" id="date"  placeholder="Date of finish reading" name="date">
+            <label for="date">Date of finish reading</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="rating"  placeholder="How much do you recommend this book" name="rating">
+            <label for="rating">How much do you recommend this book</label>
+        </div>
+        <button type="submit" class="btn btn-success">Add New Book</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
